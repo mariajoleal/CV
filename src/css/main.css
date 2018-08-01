@@ -1,0 +1,51 @@
+/*html * {
+    font-family: "Trebuchet MS" !important;
+}*/
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    margin-top: 20px;
+}
+
+.home .col-lg-6 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.divider {
+    margin: 80px 0;
+
+}
+
+.inner__divider {
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.section__block {
+    padding-left: 30px;
+}
+
+.section__title {
+    font-size: 50px;
+}
+
+.educational__school {
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+.knowledge {
+    margin-top: 50px;
+}
