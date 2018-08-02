@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
+
 </head>
 <body>
 	<header>
@@ -29,18 +30,7 @@
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Home</a></li>
                                 <li><a href="#education">Education</a></li>
-                                <li class="dropdown">
-                                <a href="#personal" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Personal data <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">About me</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Travels</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Running</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Sports</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="#personal">Personal data</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -70,12 +60,10 @@
             </div>
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
+                <img class="left__control" src="img/espalda.png">
             </a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
+                <img class="right__control" src="img/proximo.png">
             </a>
         </div> <!--END OF CAROUSEL-->
     </header>
@@ -97,11 +85,11 @@
           </div><!-- /.row -->
       </section>
 
-      <hr class="divider">
+      <hr class="divider" id="education">
 
      <!-- EDUCATIONAL SECTION -->
 
-      <section class="row section__block" id="education">
+      <section class="row section__block" >
           <div class="col-md-7 ">
               <h2 class="section__title">Education</h2>
               <hr class="inner__divider">
@@ -171,13 +159,13 @@
           </div>
       </section>
 
-      <hr class="divider">
 
        <!-- PERSONAL DATA SECTION -->
-      <div class="row section__block">
-          <div class="col-lg-12">
+        <hr class="divider" id="personal">
+        <div class="row section__block" >
+            <div class="col-lg-12">
               <div class="col-md-5">
-                  <img class="featurette-image img-responsive center-block" src="img/me.png" >
+                  <img class="img-responsive" src="img/me.png" >
               </div>
               <div class="col-md-7">
                 <h2 class="section__title">Personal Data </h2>
@@ -191,7 +179,7 @@
                         <p>When I was a little girl I spent most of my time in front of a computer, so I always wonder "How is this working?", "How is this created?" and "Who does these things?" So in that moment I realized that I wanted to study Computer Science. I love the idea of creating things and learning about new technologies</p>
                     </div>
                     <div class="col-md-6">
-                        <q> Everybody in this country should learn how to program  a computer, because it teaches you how to think </q>
+                        <q class="programming__quote"> Everybody in this country should learn how to program  a computer, because it teaches you how to think </q>
                         <p> -Steve Jobs </p>
                     </div>
                 </div>
@@ -208,7 +196,56 @@
               </div>
           </div>
           <div class="col-lg-12">
-              
+              <h3 class="inner__title--travels"> Travels</h3>
+              <div class="row">
+                  <div class="col-md-4">
+                      <p>I love to travel and know new places and cities. Here you can see some of the places I´ve visited in my life</p>
+                  </div>
+                  <div class="col-md-4 city">
+                      <!--CAROUSEL-->
+                      <div id="myCarousels" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                              <li data-target="#myCarousels" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousels" data-slide-to="1"></li>
+                              <li data-target="#myCarousels" data-slide-to="2"></li>
+                              <li data-target="#myCarousels" data-slide-to="3"></li>
+                              <li data-target="#myCarousels" data-slide-to="4"></li>
+                              <li data-target="#myCarousels" data-slide-to="5"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                              <div class="item active">
+                                  <img src="img/sf.jpeg">
+                              </div>
+                              <div class="item">
+                                  <img src="img/lv.png">
+                              </div>
+                              <div class="item">
+                                  <img src="img/la.png">
+                              </div>
+                              <div class="item">
+                                  <img src="img/gc.png">
+                              </div>
+                              <div class="item">
+                                  <img src="img/sh.png">
+                              </div>
+                              <div class="item">
+                                  <img src="img/ww.png">
+                              </div>
+                          </div>
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousels" data-slide="prev">
+                          </a>
+                          <a class="right carousel-control" href="#myCarousels" data-slide="next">
+                          </a>
+                      </div> <!--END OF CAROUSEL-->
+                  </div>
+                  <div class="col-md-4 city">
+                      <q class="city__quote">To Travel is to Live</q>
+                      <p>-Hans Christian Andersen</p>
+                  </div>
+              </div>
           </div>
       </div>
 

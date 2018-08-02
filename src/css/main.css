@@ -1,14 +1,23 @@
-/*html * {
+html * {
     font-family: "Trebuchet MS" !important;
-}*/
+}
 .navbar-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 20;
     margin-top: 20px;
 }
+
+.left__control {
+    margin-top: 180px;
+}
+
+.right__control {
+    margin-top: 180px;
+}
+
 
 .home .col-lg-6 {
     margin-top: 50px;
@@ -24,7 +33,7 @@ hr {
 }
 
 .divider {
-    margin: 80px 0;
+    margin: 90px 0;
 
 }
 
@@ -46,15 +55,23 @@ hr {
     margin-left: 50px;
 }
 
+.programming__quote {
+    font-size: 20px;
+    color: cornflowerblue;
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
 .inner__title {
     margin-bottom: 30px;
     text-align: center;
     color: darkgrey;
 }
 
-/*.center__align {
-    text-align: center;
-}*/
+.inner__title--travels {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: darkgrey;
+}
 
 .center {
     display: block;
@@ -66,3 +83,19 @@ hr {
 .knowledge {
     margin-top: 50px;
 }
+
+.city {
+    text-align: center;
+}
+
+.city__name {
+    font-size: 20px;
+
+}
+
+.city__quote {
+    font-size: 60px;
+}
+
+
+
