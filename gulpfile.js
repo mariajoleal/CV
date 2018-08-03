@@ -78,8 +78,10 @@ gulp.task('start', [
 
 gulp.task('deploy', [
     'html',
-    'fonts',
     'styles',
+    'server',
+    'watch',
     'img',
+    'icon',
     'js'
 ], cb => cb)
