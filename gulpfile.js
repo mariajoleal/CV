@@ -71,7 +71,6 @@ gulp.task('start', [
     'server',
     'watch',
 	'img',
-    'icon',
     'js'
 	
 ], cb => cb)
@@ -80,6 +79,5 @@ gulp.task('deploy', [
     'html',
     'styles',
     'img',
-    'icon',
     'js'
 ], cb => cb)
