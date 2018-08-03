@@ -1,0 +1,26 @@
+
+.navbar {
+    background-color: $nav-color !important;
+    height: 70px;
+
+}
+
+.navbar-default {
+    background-color: #36465d;
+    border-radius: 0px;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.navbar-collapse {
+    z-index: 1;
+    background-color: #36465d;
+}
+
+.navbar-fixed-top {
+    top: 0;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: relative;
+}
