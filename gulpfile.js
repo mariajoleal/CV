@@ -51,12 +51,12 @@ gulp.task('lint', () => {
 });
 
 gulp.task('js', () => {
-    return gulp.src('src/js/*.js')
-        .pipe(gulp.dest('dist/js/'))
+    return gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js')
+        .pipe(gulp.dest('dist/js'))
 })
 
 gulp.task('img', () => {
-    return gulp.src('src/**/*.{gif,jpg,png,svg}')
+    return gulp.src('src/**/*.{gif,jpg,jpeg,png,svg}')
         .pipe(gulp.dest('dist'))
 })
 
@@ -66,7 +66,8 @@ gulp.task('start', [
     'styles',
     'server',
     'watch',
-	'img'
+	'img',
+    'js'
 	
 ], cb => cb)
 
@@ -74,5 +75,6 @@ gulp.task('deploy', [
     'html',
     'fonts',
     'styles',
-    'img'
+    'img',
+    'js'
 ], cb => cb)

@@ -1,0 +1,11 @@
+// helpers load first
+@import "helpers/variables";
+
+// load vendor libs, but just what you need
+@import "vendor/bootstrap-custom";
+
+// load components
+@import "components/navbar";
+
+// load components
+@import "pages/home";
