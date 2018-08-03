@@ -60,6 +60,10 @@ gulp.task('img', () => {
         .pipe(gulp.dest('dist'))
 })
 
+gulp.task('icon', () => {
+    return gulp.src('favicon.ico')
+        .pipe(gulp.dest('dist'))
+})
 
 gulp.task('start', [
     'html',
@@ -67,6 +71,7 @@ gulp.task('start', [
     'server',
     'watch',
 	'img',
+    'icon',
     'js'
 	
 ], cb => cb)
