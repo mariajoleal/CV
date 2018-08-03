@@ -31,7 +31,7 @@
                                 <li class="active"><a href="#">Home</a></li>
                                 <li><a href="#education">Education</a></li>
                                 <li><a href="#personal">Personal data</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a a data-toggle="modal" data-target="#exampleModalCenter">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -248,13 +248,54 @@
               </div>
           </div>
       </div>
-
-      <hr class="divider">
-
 	</main>
-	<footer>
-		
+
+	<footer class="footer">
+        <a href="https://www.facebook.com/mariajo.leal"> <img class="footer__img" src="img/facebook.png"></a>
+        <a href="https://twitter.com/mariajolealr"><img class="footer__img" src="img/gorjeo.png"></a>
+        <a href="https://www.linkedin.com/in/mariajoleal/"> <img class="footer__img" src="img/linkedin.png"></a>
+        <a href="https://plus.google.com/108106296134306151913"><img class="footer__img" src="img/google-plus.png"></a>
+        <a href="https://github.com/mariajoleal"><img class="footer__img" src="img/github.png"></a>
 	</footer>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Contact me</h5>
+                </div>
+                <div class="container modal-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                        <p>Cel:</p>
+                        </div>
+                        <div class="col-md-10">
+                            <p>8345-0794</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p>Mail</p>
+                        </div>
+                        <div class="col-md-10">
+                            <p>mariajo20leal@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
